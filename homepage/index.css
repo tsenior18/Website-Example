@@ -5,7 +5,8 @@
 }
 
 body {
-    background: beige;
+    background: mintcream;
+    height: 100vh;
 }
 
 /* Header of the page */
@@ -71,8 +72,9 @@ body {
 }
 
 .title h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Roboto', sans-serif;
+    color: black;
     font-weight: bold;
     padding-top: 3%;
 }
@@ -99,4 +101,35 @@ body {
     border-style: dashed;
 }
 
-/*  */
+/* Main Section  */
+.times {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.time-section,
+.time-button {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.time {
+    color: black;
+    font-size: 20px;
+    font-family: 'Podkova', serif;
+}
+
+.time-button button {
+    background: slategray;
+    width: 200px;
+    height: 10vh;
+    font-size: 20px;
+    color: black;
+    font-family: 'Podkova', serif;
+}
+
+.time-button button:hover {
+    border: 2px solid black;
+}
