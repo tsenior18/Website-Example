@@ -5,7 +5,7 @@
 }
 
 body {
-    background: mintcream;
+    background: beige;
 }
 
 /* Header of the page */
@@ -59,4 +59,20 @@ body {
 
 .topnav li a:hover:not(.active) {
     background-color: #111;
+}
+
+/* CSS for the first coloumn */
+.title {
+    height: 20vh;
+    width: 98;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.title h1 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-top: 3%;
 }
