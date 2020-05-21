@@ -1,5 +1,5 @@
+/* JS For the Live time When clicking the button */
 const button = document.querySelector('#clicks');
-
 button.addEventListener('click', function getTime() {
     var date = new Date();
     var h = date.getHours();
@@ -16,3 +16,28 @@ button.addEventListener('click', function getTime() {
 
     const times = document.querySelector('#time').innerHTML = final;
 });
+
+// ---- JS For the Log In section & Setting Users 
+
+var loginUsers = [{
+        username: "Guest",
+        password: "Password"
+    },
+    {
+        username: "tom",
+        password: "senior"
+    },
+    {
+        username: "mike",
+        password: "password"
+    }
+];
+
+const logButton = document.querySelector('#button');
+
+logButton.addEventListener('click', function () {
+    var username = document.getElementById("#username").value
+    var password = document.getElementById('#password').value
+
+    console.log(password);
+})
