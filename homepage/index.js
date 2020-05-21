@@ -17,27 +17,14 @@ button.addEventListener('click', function getTime() {
     const times = document.querySelector('#time').innerHTML = final;
 });
 
-// ---- JS For the Log In section & Setting Users 
-
-var loginUsers = [{
-        username: "Guest",
-        password: "Password"
-    },
-    {
-        username: "tom",
-        password: "senior"
-    },
-    {
-        username: "mike",
-        password: "password"
+// ---- JS For the Log In section & Setting Users  
+const button1 = document.querySelector('#button1');
+button1.addEventListener('click', function () {
+    var user = document.querySelector('#username').value
+    var passwords = document.querySelector('#password').value
+    if (user == 'tom' && passwords == 'tom') {
+        alert('yes');
+    } else {
+        alert('no');
     }
-];
-
-const logButton = document.querySelector('#button');
-
-logButton.addEventListener('click', function () {
-    var username = document.getElementById("#username").value
-    var password = document.getElementById('#password').value
-
-    console.log(password);
 })
